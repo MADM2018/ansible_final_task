@@ -2,14 +2,14 @@
 # tasks file for app
 - name: instalar python
   apt:
-      name: python:3.6
+    name: python:3.6
 
 - name: instalar librerias python
   pip:
-    name: Flask, mysql-connector 
+    name: google-api-core, google-api-python-client, google-auth, google-auth-httplib2, google-auth-oauthlib, googleapis-common-protos, oauth2client, oauthlib, PyMySQL, requests, requests-oauthlib, tweepy,
 
 - name: copiar fichero
-  copy: src=..files/app.py dest=/app
+  copy: src=..files/* dest=/app
 
 - name: ejecutar script
-  command: python /app/app.py
+  command: python /app/generate_report.py

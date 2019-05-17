@@ -1,5 +1,5 @@
 [app]
-server01 ansible_host=10.0.0.1
+server01 ansible_host=172.0.0.1
 
 [db]
-server02 ansible_host=10.0.0.2
+server02 ansible_host=172.0.0.2
